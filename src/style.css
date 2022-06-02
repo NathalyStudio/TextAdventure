@@ -1,0 +1,24 @@
+body {
+  background-color: lightblue;
+}
+
+.game-button {
+    padding: 30px;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: lightgreen;
+    border-radius: 30%;
+    border: 2px solid black;
+    font-family: 'Droid Serif', serif;
+    letter-spacing: 2px;
+    text-shadow: 0.5px 0.5px 0.5px black;
+    margin-bottom: 100px;
+
+}
+
+.game-text {
+  text-align:center;
+  margin-bottom: 50px;
+  margin-top: -50px;
+
+}
