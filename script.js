@@ -1,34 +1,34 @@
 function Submit() {
-  alert("Hello, we are now going on a adventure to find a diamond");
-  alert("On the adventure there will come different choices of different thinks to do, if you choose wrong you might not find the diamond");
-  alert("Okey, lets go");
+  alert("La Trifuerza te ha escogido, tienes una misión y es la de rescatar a la princesa Zoe");
+  alert("En tu aventura pasarás por diversos obstáculos, ten cuidado, tus decisiones afectarán el destino de nuestro reino, pero todo sea por encontrar a la princesa.");
+  alert("¡¡Bien, vamos a ello!!");
 
     var Name = prompt("Type in your name");
     while (Name === "") {
-    alert("Please type a name in the field!")
-    var Name = prompt("Type in your name");
+    alert("¿Como te llamas joven?!")
+    var Name = prompt("Escribe tu nombre");
     } 
 
-  alert("Hello " + Name);
+  alert("Hola, mucho gusto " + Name);
 
 
-  var things = prompt("You are at a table, on the table there is 3 things, a hammer, a flower, and a shovel. Choose 1 item to bring on the adventure");
+  var things = prompt("Te despiertas de un sueño, te levantas de la cama y notas una luz proveniente de tu escritorio. Encuentras 3 objetos, una espada plástica, un escudo de goma y una ocarina de juguete. Elige tu arma preferida.");
 
   if (things === "") {
-    alert("You have to choose something to bring on the adventure.")
-    throw new Error("you did not find the diamond!"); 
+    alert("Debes elegir para continuar con tu aventura.")
+    throw new Error("No cumpliste con tu misión y el reino entró en caos con el país vecino!"); 
 
 
   } else {
-    alert("You choosed " + things);
+    alert("Has escogido " + things);
   }
 
 
-  alert("You enter a dark forest " + " you can hear birds singing in the air, and the sound of air sweeping through the trees");
+  alert("Comienzas a caminar hasta introducirte en un bosque particular, el bosque perdido " + " percibes ciertos pasos a tu alrededor y la corriente de aire entre los arboles");
 
-  alert("Suddenly, you arrive at a road, with 2 different ways, one to the left and one to the right " + "Choose wich way, you wanna take");
+  alert("De repente, el camino se divide en 2, uno va a la izquierda y el otro a la derecha " + "Elige que camino quieres tomar campeón");
 
-  var road = prompt("LEFT or RIGHT?");  
+  var road = prompt("¿IZQUIERDA O DERECHA?");  
   var decision;
   var decision2;
   var decision3;
@@ -39,22 +39,22 @@ function Submit() {
 
 
   function roadLeft() {
-    alert("As you start walking on the left road, the forest starts to get brighter, and you hear more animals in the background making noises, and the sun shines in.");   
-    alert("Far ahead of you, you see a wooden cabin.");
-    alert("You walk up to the doorstep of the cabin, and glance through the window to see if someone is there.");
-    alert("You knock on the door 2 times " + "*knock* *knock*");
-    alert("Noone opens the door.");
-    alert("Now you have to choose if you wanna go inside the cabin or continue on the road.");
-    decision = prompt("ROAD or CABIN").toLowerCase();
+    alert("Mientras sigues caminando por el camino izquierdo el bosque comienza a cambiar a sus alrededores y los animales comienzan a aparecer en tu camino.");   
+    alert("A lo lejos observas un refugio.");
+    alert("Te acercas a ver si hay alguien allí.");
+    alert("Tocas la puerta un par de veces " + "*toc* *toc*");
+    alert("No parece haber nadie dentro.");
+    alert("¿Quieres entrar al REFUGIO o seguir tu CAMINO?.");
+    decision = prompt("CAMINO or REFUGIO").toLowerCase();
   }
 
   function roadRight() {
-    alert("As you start walking on the right road, you stop hearing the sound of birds in the sky");
-    alert("You walk deeper and deeper in to the forest");
-    alert("You feel the cold wind blowing, it makes you shivver");    
-    alert("You glance with your eyes, to your right, and spots a entrance to a cave");
-    alert("You must now choose if you wanna continue on the road, or go inside the cave");
-    decision2 = prompt("ROAD or CAVE").toLowerCase();
+    alert("Mientras sigues caminando por el camino derecho el bosque comienza a cambiar a sus alrededores y los animales comienzan a aparecer en tu camino.");
+    alert("Te pierdes en el bosque");
+    alert("Sientes mucho frío y comienzas a perder sensibilidad en tus extremidades");    
+    alert("Tienes buena vista y notas una cueva a lo lejos");
+    alert("¿Quiere ser tu CAMINO o entrar a la CUEVA");
+    decision2 = prompt("CAMINO o CUEVA").toLowerCase();
   }
 
 
@@ -69,25 +69,25 @@ function Submit() {
 
 
    function continueRoad(){
-    alert("You continue to walk on the road");
-    alert("The trees seems to disapear");
-    alert("And the sun shines stronger than ever");
-    alert("You hold your hands over your eyes, to avoid getting blend by the sun");
-    alert("You slowly put your hands down, and as you do it, you look around");
+    alert("Sigues recorriendo tu camino");
+    alert("Los arboles comienzan a desaparecer");
+    alert("Y el sol se oculta tras el cúmulo de nubes");
+    alert("Corres como alma que lleva el diablo asustadito");
+    alert("Miras alrededor");
     alert("Its a huge farm with alot of weath");
-    alert("You see a man, feeding cows");
-    alert("You now have to choose to walk up to the man or move on");
-    decision3 = prompt("MAN or MOVE").toLowerCase();
+    alert("Observas a un señor alimentar unas vacas");
+    alert("Quieres dirigirte hacia el SEÑOR o o seguir CAMINANDO");
+    decision3 = prompt("SEÑOR or CAMINAR").toLowerCase();
   }
 
   function cabin() {
-   alert("You decide to go inside the cabin");
-   alert("You extend your left arm and open the door");
+   alert("Decides entrar al refugio");
+   alert("Abres la puerta con la mano izquierda");
    alert("As you open the old door, its starts screaking *screak* *screak*");
-   alert("Inside the cabin, its all dusty. And theres a bunch of old furnitures");
-   alert("You slowly walks around, in the cabin. the floor cracks as you put your weight on it");
-   alert("You see a stair down to a basement");
-   alert("You now have to decide if you wanna go down to the basement or continue searching the house");
+   alert("Yo");
+   alert("Caminas lentamente dentro del refugio, el piso se quiebra y caes a lo boludo");
+   alert("Encuentras unas escaleras que van hacia una especie de sótano");
+   alert("Quieres ir al SOTANO o seguir tu CAMINO");
    decision4 = prompt("BASEMENT or CONTINUE").toLowerCase();
   }
 
@@ -99,7 +99,7 @@ function Submit() {
    } else if (decision === "cabin") {
       cabin();
    } else {
-     throw new Error("you did not find the diamond!"); 
+     throw new Error("Caíste en una trampa para osos y moriste desangrado, el reino entra en caos y todo fue un desastre, ¡bravo campeón!"); 
    }
 }
 
@@ -109,7 +109,7 @@ function Submit() {
 
 
    function road3() {   
-    alert("You continue on the dark road");
+    alert("Sigues caminando a traves del sendero");
     alert("It feels like the forest gets smaller, the trees are pushing up against you");
     alert("You feel afraid");
     alert("You start running forward");
