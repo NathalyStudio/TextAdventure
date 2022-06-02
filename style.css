@@ -1,0 +1,80 @@
+/*esto es para instalar fuentes*/
+
+@font-face {
+  font-family: Ubuntu;
+  src: url("fonts/Ubuntu-Regular.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url("fonts/Ubuntu-Light.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url("fonts/Ubuntu-Medium.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url("fonts/Ubuntu-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url(fonts/CormorantGaramond-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url(fonts/CormorantGaramond-Medium.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url(fonts/CormorantGaramond-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Staatliches;
+  src: url(./fonts/Staatliches-Regular.ttf);
+  font-weight: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+.main{
+  background-image: url(./adventure-gdf8f4a4b7_1920.jpg);
+  height: 100vh;
+  
+}
+
+.game-button {
+    padding: 30px;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: lightgreen;
+    border-radius: 30%;
+    border: 2px solid black;
+    font-family: 'Droid Serif', serif;
+    letter-spacing: 2px;
+    text-shadow: 0.5px 0.5px 0.5px black;
+    margin-bottom: 100px;
+
+}
+
+.game-text {
+  text-align:center;
+  margin-bottom: 50px;
+  margin-top: -50px;
+
+}
