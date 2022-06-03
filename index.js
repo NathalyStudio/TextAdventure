@@ -36,15 +36,15 @@ function Submit() {
 
 
    function ValidateWeapon(){
-       let validateOption = prompt("Elige entre una espada plástica (1), un escudo de goma (2) y una ocarina de juguete (3). Elige tu arma preferida de acuerdo con el número de la misma.");
+       let validateOption = prompt("Elige entre una espada plástica (1), un escudo de goma (2) y una ocarina de juguete (3). Elige tu arma preferida.");
   switch(validateOption){
-      case "1":
+      case "espada":
           alert("Haz escogido la espada plástica. Tendrás mejor oportunidad en combates, pero tu defensa será regular.");
           break;
-        case "2": 
+        case "escudo": 
         alert("Haz escogido un escudo de goma. Tendrás una defensa excelente, pero te costara defenderte de tus enemigos.")
         break;
-        case "3": 
+        case "ocarina": 
         alert("Haz escogido una ocarina de juguete . Tendrás altos poderes de control mental sobre los demás, sin embargo, no podrás usarlos muchos porque te acortan la vida.")
         break;
         default:
@@ -167,13 +167,13 @@ function Submit() {
         alert("Te preguntas a ti mismo, ¿donde estoy?*");
         alert("A lo lejos, detectas 2 caminos para tomar");
         alert("Uno de los caminos es PURPURA y el otro es AZUL");
-        alert("Alcanzas la divisoria, ¿cual camino quieres tomar?");
+        alert("Alcanzas la divisoria, ¿cual camino quieres tomar? Escribe el color de tu seleccion");
         decision5 = prompt("PURPURA or AZUL").toLowerCase();
     }
 
     function cave() {
         alert("Caminas hacia la entrada de la cueva");
-        alert("Escuchas el sonido de los Zubat (en esta historia hay pokemones, problem?) alrededor");
+        alert("Escuchas el sonido de los Zubat alrededor(en esta historia hay pokemones, problem?) ");
         alert("Con algo de temor, entrar a la cueva");
         alert("Hace frío dentro, no tienes nada que te caliente");
         alert("Escuchas un sonido de goteo cerca pero lo ignoras y sigues...");
@@ -212,6 +212,7 @@ function Submit() {
             alert("el puente se tambalea un poco pero te las arreglas para cruzar sin problemas");
             alert("Sales de la cueva para volver a encontrar en el extraño bosque");
             alert("Hay un camino, parece ser el camino principal, lo tomas sin saber donde ir");
+            alert("Te has ido a la chingada y perdiste!!")
             throw new Error(mensajeFinDelJuego);
         }
 
@@ -219,9 +220,9 @@ function Submit() {
 
     if (decision2 !== undefined) {
         // only run this code if the decision2 variable has been defined
-        if (decision2 === "road") {
+        if (decision2 === "camino") {
             road3();
-        } else if (decision2 === "cave") {
+        } else if (decision2 === "cueva") {
             cave();
         } else {
             throw new Error(mensajeFinDelJuego);
@@ -245,27 +246,28 @@ function Submit() {
         alert("Lo miras");
         alert("Es una extraña pieza!");
         alert("Lo tomas y bajas de la colina");
-        alert("You walk down the mountain");
-        alert("and you run home");
-        alert("CONGRATULATIONS!!!! YOU FOUND THE DIAMOND!");
+        alert("Corres a casa contento a revisar en tu PC a ver si es lo que piensas");
+        alert("Revisas y siii!! Es el DIAMANTE!");
+        alert("FELICITACIONES! Haz ganado y sorteado con agilidad todas las trampas!");
         throw new Error(mensajeFinDelJuego);
     }
 
     function notMap() {
         alert(" - NO LO TOMES PUES!! ");
         alert(" - VETE BICHOTA! grita el hombre algo agitado");
-        alert("te vas a casa llorando como nena");
+        alert("Te vas a casa llorando como nena porque esta cruzada te quedo muy grande");
         throw new Error(mensajeFinDelJuego);
     }
 
     if (decision6 !== undefined) {
-        if (decision6 === "yes") {
+        if (decision6 === "SI") {
             map();
 
-        } else if (decision6 === "no") {
+        } else if (decision6 === "NO") {
             notMap();
 
         } else {
+            alert("TE HAS EQUIVOCADO Y ESO TE HA COSTADO EL JUEGO. Suerte a la proxima!🙃")
             throw new Error(mensajeFinDelJuego);
         }
     }
@@ -283,12 +285,28 @@ function Submit() {
         alert(" - Holi! dice el ave");
         prompt("*alv un pajaro que habla o.o!*");
         alert(" - Bienvenido al Bosque Perdido, ¿como te llamas vato?");
-        alert(Name);
-        alert("Ummm ya veo, a ver " + Name + " ¿que te trae por aquí? ");
-        prompt("*Sigo flipando con el ave que habla....*");
-        alert("Pues " + "si sigues este camion, si sigues este camino no llegarás a ningún lado, y te morirás literalmente de hambre o algo por el estilo...");
-        alert("Le haces caso al extraño animal, y te vas regreso a tus tierras");
-        throw new Error(mensajeFinDelJuego);
+        let name2 = prompt("Escribe tu nombre");
+        if(name2 === Name){
+             alert("Ummm ya veo, a ver " + Name + " ¿que te trae por aquí? ");
+             let busqueda = prompt("Cuentame, estas buscando un diamante?")
+             if(busqueda == "diamante"){
+                alert("Pues..." + "si sigues este camion, si sigues este camino no llegarás a ningún lado, y te morirás literalmente de hambre o algo por el estilo...");
+                alert("Aqui solo hay una opcion, hacerle caso al animal y regresar a tu casa. Asi que has perdido");
+                throw new Error(mensajeFinDelJuego);
+             }
+             else{
+                alert("Mmm, asi que has decidido mentirme aunque soy un pajaro omnipotente y omnipresente...")
+                alert("Por mentirme te voy a matar con mi vision de rayo laser... PIIIUUUUU")
+                alert("Te ha freido un pajaro, que ironia. FIN DEL JUEGO")
+                throw new Error(mensajeFinDelJuego);
+             }
+        }
+        else{
+            alert("Mmm, asi que has decidido mentirme aunque soy un pajaro omnipotente y omnipresente...")
+            alert("Por mentirme te voy a matar con mi vision de rayo laser... PIIIUUUUU")
+            alert("Te ha freido un pajaro, que ironia. FIN DEL JUEGO")
+            throw new Error(mensajeFinDelJuego); 
+         }
 
     }
 
@@ -299,10 +317,10 @@ function Submit() {
         alert("Mueres de hambre así que decides entrar y comprar algo.")
         alert("Al abrir la puerta de la tienda escuchas una campana sonar.")
         alert("El cajero se voltea a mirarte con desgano.")
-        alert("Tomas una bolsa, pasta, y revisas que mas hay.")
+        alert("Tomas una bolsa: es pasta, y revisas que mas hay.")
         alert("He aquí una lista de todas las cosas disponibles en la tienda.")
-        var inStock = ['Doritos', 'Lays', 'Leche', 'Oreos', 'Queso', 'Pan', 'Jamón', 'Zanahori',
-            'Taquitos al pastor', 'Quesadillas', 'Agüita de beber', 'Cebolla', 'Cambur', 'Patacones', 'Ceviche'
+        var inStock = ['Doritos', 'Lays', 'Leche', 'Oreos', 'Queso', 'Pan', 'Jamón', 'Zanahoria',
+            'Taquitos', 'Quesadillas', 'Aguita de beber', 'Cebolla', 'Cambur', 'Patacones', 'Ceviche'
         ];
         var search = prompt(inStock.join(", ") + " " + "Escoje que quieres comprar, escribe 'listo' cuando termines." + " escribe una cosa a la vez.");
         var inBag = [];
