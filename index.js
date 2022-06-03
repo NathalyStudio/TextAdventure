@@ -25,29 +25,59 @@ function Submit() {
             alert("Haz escogido una opcion no valida. Escoge de nuevo")
             ValidateName();
         }
-    }
-    
+    }    
 
-   
-    
-
-    var things = prompt("Te despiertas de un sueño, te levantas de la cama y notas una luz proveniente de tu escritorio. Encuentras 3 objetos: una espada plástica, un escudo de goma y una ocarina de juguete. Elige tu arma preferida.");
-
-    if (things === "") {
+    var things = prompt("Te despiertas de un sueño, te levantas de la cama y notas una luz proveniente de tu escritorio. Encuentras 3 objetos: una espada plástica (1), un escudo de goma (2) y una ocarina de juguete (3). Elige tu arma preferida de acuerdo con el número de la misma.");
+  /*   while (things === "") {
         alert("Debes elegir para continuar con tu aventura.")
-        throw new Error("No cumpliste con tu misión y el reino entró en caos con el país vecino!");
+        alert("No cumpliste con tu misión y el reino entró en caos con el país vecino!");
+    } */
+    ValidateWeapon();
 
 
+   function ValidateWeapon(){
+       let validateOption = prompt("Elige entre una espada plástica (1), un escudo de goma (2) y una ocarina de juguete (3). Elige tu arma preferida de acuerdo con el número de la misma.");
+  switch(validateOption){
+      case "1":
+          alert("Haz escogido la espada plástica. Tendrás mejor oportunidad en combates, pero tu defensa será regular.");
+          break;
+        case "2": 
+        alert("Haz escogido un escudo de goma. Tendrás una defensa excelente, pero te costara defenderte de tus enemigos.")
+        break;
+        case "3": 
+        alert("Haz escogido una ocarina de juguete . Tendrás altos poderes de control mental sobre los demás, sin embargo, no podrás usarlos muchos porque te acortan la vida.")
+        break;
+        default:
+            alert("No cumpliste con tu misión y el reino entró en caos con el país vecino!");
+            alert("No haz escogido ningun arma, por tanto, te has quedado desprotegido.")
+  }
+
+   }
+/*     if (things === "") {
+        alert("Debes elegir para continuar con tu aventura.")
+        alert("No cumpliste con tu misión y el reino entró en caos con el país vecino!");
     } else {
-        alert("Has escogido " + things);
-    }
+        alert("Has escogido la opcion" + things + ". Esta te será útil más adelante. Continuemos con la aventura");
+    } */
 
-
+ 
     alert("Comienzas a caminar hasta introducirte en un bosque particular, el bosque perdido " + " percibes ciertos pasos a tu alrededor y la corriente de aire entre los arboles");
 
     alert("De repente, el camino se divide en 2, uno va a la izquierda y el otro a la derecha " + "Elige que camino quieres tomar campeón");
 
     var road = prompt("¿IZQUIERDA O DERECHA?");
+    if (road === "izquierda" || road === "IZQUIERDA") {
+        roadLeft();
+    } else if (road === "derecha" || road === "DERECHA") {
+        roadRight();
+    } else {
+        var mensajeFinDelJuego = alert("¡No encontraste el diamante! FIN DEL JUEGO")
+        throw new Error(mensajeFinDelJuego);
+    }
+
+
+
+
     var decision;
     var decision2;
     var decision3;
@@ -78,13 +108,7 @@ function Submit() {
 
 
 
-    if (road === "left") {
-        roadLeft();
-    } else if (road === "right") {
-        roadRight();
-    } else {
-        throw new Error("¡No encontraste el diamante!");
-    }
+  
 
 
     function continueRoad() {
@@ -113,12 +137,13 @@ function Submit() {
 
     if (decision !== undefined) {
         // only run this code if the decision variable has been defined
-        if (decision === "road") {
+        if (decision === "camino") {
             continueRoad();
-        } else if (decision === "cabin") {
+        } else if (decision === "refugio") {
             cabin();
         } else {
-            throw new Error("Caíste en una trampa para osos y moriste desangrado, el reino entra en caos y todo fue un desastre, ¡bravo campeón!");
+            alert("Caíste en una trampa para osos y moriste desangrado, el reino entra en caos y todo fue un desastre, ¡bravo campeón!")
+            throw new Error(mensajeFinDelJuego);
         }
     }
 
