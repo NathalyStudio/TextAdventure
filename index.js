@@ -71,7 +71,7 @@ function Submit() {
     } else if (road === "derecha" || road === "DERECHA") {
         roadRight();
     } else {
-        var mensajeFinDelJuego = alert("¡No encontraste el diamante! FIN DEL JUEGO")
+        var mensajeFinDelJuego = alert("¡Caes en una trampa y tus tripas sirven de alimento para los roedores! FIN DEL JUEGO")
         throw new Error(mensajeFinDelJuego);
     }
 
@@ -131,7 +131,7 @@ function Submit() {
         alert("Caminas lentamente dentro del refugio, el piso se quiebra y caes a lo boludo");
         alert("Encuentras unas escaleras que van hacia una especie de sótano");
         alert("Quieres ir al SOTANO o seguir tu CAMINO");
-        decision4 = prompt("BASEMENT or CONTINUE").toLowerCase();
+        decision4 = prompt("SOTANO or CONTINUE").toLowerCase();
     }
 
 
@@ -154,17 +154,17 @@ function Submit() {
 
     function road3() {
         alert("Sigues caminando a traves del sendero");
-        alert("It feels like the forest gets smaller, the trees are pushing up against you");
-        alert("You feel afraid");
-        alert("You start running forward");
-        alert("The sticks from the tree hits you as you run past them");
-        alert("You trip on a wooden stick on the ground");
-        alert("And starts falling down a steep hill");
-        alert(" *falling* *falling* ");
-        alert("After a while you stop falling");
-        alert("You stand up, and looks around the area");
-        alert("The trees are yellow");
-        alert("You wonder to yourself, *Where am i?*");
+        alert("Sientes que el bosque se achica, los arboles comienzan a empujarte");
+        alert("Sientes miedo");
+        alert("Comienzas a correr como una nena");
+        alert("Las ramas te golpean al pasar rápidamente");
+        alert("Tropiezas con una raíz de un arbol y...");
+        alert("...caes colina abajo, rodando como una bola de nieve... digo tierra...");
+        alert(" *caes y caes aún mas..* ");
+        alert("Al rato dejas de caer y te levantas");
+        alert("Miras a tu alrededor algo mareado aún");
+        alert("Los arboles ahora son amarillos, huh?");
+        alert("Te preguntas a ti mismo, ¿donde estoy?*");
         alert("Ahead of you, you can see 2 road with different patterns");
         alert("One of the road as purple with bricks the other one is blue dirt");
         alert("Choose wich road you wanna take");
