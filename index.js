@@ -208,11 +208,11 @@ function Submit() {
             alert("Solo tengo un(a) " + things);
             alert(" - Oh vaya, supongo que no podremos hacer mas...");
             alert(" - hay una salida siguiendo ese puente de allí, señala con el dedo el señor ");
-            alert("You walk over the bridge");
-            alert("the bridge moves a little bit, but you manage to go over it");
-            alert("You walk out from the cave, and enters the forest again");
-            alert("You find the main road again, and you walk home");
-            throw new Error("you did not find the diamond!");
+            alert("Te vas del lugar atravesando el puente");
+            alert("el puente se tambalea un poco pero te las arreglas para cruzar sin problemas");
+            alert("Sales de la cueva para volver a encontrar en el extraño bosque");
+            alert("Hay un camino, parece ser el camino principal, lo tomas sin saber donde ir");
+            throw new Error("Mueres de hambre y cansancio, que pena");
         }
 
     }
@@ -224,23 +224,24 @@ function Submit() {
         } else if (decision2 === "cave") {
             cave();
         } else {
-            throw new Error("you did not find the diamond!");
+            throw new Error("Mueres de hambre y cansancio, que pena");
         }
     }
 
     function map() {
-        alert("You extend your arm and grabs the map");
-        alert("you examine the map with your eyes");
-        alert("you make your way out to the cave");
-        alert("you look at the map, and sees that the treasure is far away from you");
-        alert("you start to walk");
-        alert(" * 3 hours later * ");
-        alert(" you arrive at a large mountain");
-        alert("The map says that the treasure is up on the mountain");
-        alert("You spot a small road up to the mountain");
-        alert("you walk on the road, up to the mountain");
-        alert(" * 1 hour later * you arrive at the top");
-        alert(" you see a rock that shines at the top");
+        alert("Extiendes tu mano y tomas el MAPA");
+        alert("Lo examinas y descubres ciertas cositas");
+        alert("logras salir de la cueva");
+        alert("Checas el mapa y notas una X que se encuentra muy lejana a tu ubicación actual");
+        alert("Caminas sin cesar y con algo de hambre");
+        alert(" * 3 doritos mas tarde * ");
+        alert(" Llega a una montaña muy alta");
+        alert("El mapa dice que el tesoro está en la punta de dicha montaña");
+        alert("Trepas con tus manos y sigues tu camino hacia la cima");
+        alert(" * 1 lays mas tarde * llegas a la cima");
+        alert(" Miras una roca que brilla y tiene grabada una especia de enigma");
+
+
         alert("you walk up to it");
         alert("ITS THE DIAMOND!");
         alert("you grab the diamond");
@@ -253,10 +254,10 @@ function Submit() {
     }
 
     function notMap() {
-        alert(" - DONT TAKE IT THEN!! ");
-        alert(" - GO AWAY! says the man");
-        alert("you walk home, looking sad");
-        throw new Error("you did not find the diamond!");
+        alert(" - NO LO TOMES PUES!! ");
+        alert(" - VETE BICHOTA! grita el hombre algo agitado");
+        alert("te vas a casa llorando como nena");
+        throw new Error("Perdiste por nena");
     }
 
     if (decision6 !== undefined) {
