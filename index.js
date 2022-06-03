@@ -6,11 +6,30 @@ function Submit() {
     var Name = prompt("Escribe tu nombre");
     while (Name === "") {
         alert("¿Como te llamas joven?!")
-        var Name = prompt("Escribe tu nombre");
+        Name = prompt("Escribe tu nombre");
+        } 
+    ValidateName();
+
+    function ValidateName(){
+         
+        let validateSpelling = prompt("Hola, ¿de verdad te llamas " + Name + "? s/n");
+
+        if(validateSpelling == "s" || validateSpelling =="S"){
+            alert("Mucho gusto " + Name);
+        }
+        else if(validateSpelling == "n" || validateSpelling == "N"){
+            Name = prompt("Escribe tu nombre");
+            ValidateName();
+        }
+        else{
+            alert("Haz escogido una opcion no valida. Escoge de nuevo")
+            ValidateName();
+        }
     }
+    
 
-    alert("Hola, mucho gusto " + Name);
-
+   
+    
 
     var things = prompt("Te despiertas de un sueño, te levantas de la cama y notas una luz proveniente de tu escritorio. Encuentras 3 objetos: una espada plástica, un escudo de goma y una ocarina de juguete. Elige tu arma preferida.");
 
