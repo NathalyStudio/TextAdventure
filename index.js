@@ -27,7 +27,7 @@ function Submit() {
         }
     }    
 
-    var things = prompt("Te despiertas de un sueño, te levantas de la cama y notas una luz proveniente de tu escritorio. Encuentras 3 objetos: una espada plástica (1), un escudo de goma (2) y una ocarina de juguete (3). Elige tu arma preferida de acuerdo con el número de la misma.");
+    var things = prompt("Te despiertas de un sueño, te levantas de la cama y notas una luz proveniente de tu escritorio. Encuentras 3 objetos: una espada de madera (1), un escudo de goma (2) y una ocarina de juguete (3). Elige tu arma preferida de acuerdo con el número de la misma.");
   /*   while (things === "") {
         alert("Debes elegir para continuar con tu aventura.")
         alert("No cumpliste con tu misión y el reino entró en caos con el país vecino!");
@@ -117,7 +117,7 @@ function Submit() {
         alert("Y el sol se oculta tras el cúmulo de nubes");
         alert("Corres como alma que lleva el diablo asustadito");
         alert("Miras alrededor");
-        alert("Its a huge farm with alot of weath");
+        alert("Es una granja enorme con bastante trigo");
         alert("Observas a un señor alimentar unas vacas");
         alert("Quieres dirigirte hacia el SEÑOR o o seguir CAMINANDO");
         decision3 = prompt("SEÑOR or CAMINAR").toLowerCase();
@@ -247,10 +247,8 @@ function Submit() {
         alert("you grab the diamond");
         alert("You walk down the mountain");
         alert("and you run home");
-        document.getElementById('audio').volume = 0.2;
-        document.getElementById('audio').play();
         alert("CONGRATULATIONS!!!! YOU FOUND THE DIAMOND!");
-        throw new Error("You completed the game by finding the Diamond");
+        throw new Error("Esta historia continuará... porque no nos dió mas chance y Piero nos va a matar");
     }
 
     function notMap() {
@@ -268,7 +266,7 @@ function Submit() {
             notMap();
 
         } else {
-            throw new Error("you did not find the diamond!");
+            throw new Error("Moriste por nena");
         }
     }
 
@@ -276,49 +274,49 @@ function Submit() {
 
     function purple() {
 
-        alert("You start to walk on the purple road");
-        alert("The trees turns into rainbow colors");
-        alert("and when you walk, you hear wierd noises");
-        alert("you hear a strange sound in the sky");
-        alert("You look up, and spots a bird, circling over you");
-        alert("its flies down to you " + "and lands on a rock next to you");
-        alert(" - Hello! says the bird");
-        prompt("*Speaking to the bird*");
-        alert(" - Welcome to Dandorg, whats your name?");
+        alert("Caminas por el camino púrpura");
+        alert("Los arboles toman y tono tipo arcoiris");
+        alert("y cuando caminas escuchas sonidos super extraños");
+        alert("un susurro proveniente de arriba, el cielo tal vez...");
+        alert("Miras hacia arriba, hay un ave rondando sobre ti");
+        alert("Desciende hacia ti " + "se descansa cerca");
+        alert(" - Holi! dice el ave");
+        prompt("*alv un pajaro que habla o.o!*");
+        alert(" - Bienvenido al Bosque Perdido, ¿como te llamas vato?");
         alert(Name);
-        alert("So " + Name + " what brings you here to Dandorg? ");
-        prompt("*Speaking to the bird*");
-        alert("okey " + "well if you continue this road, you will end up in the middle of nowhere, and    into the shadow");
-        alert("you decide to listen to the bird, and you walk home");
-        throw new Error("you did not find the diamond!");
+        alert("Ummm ya veo, a ver " + Name + " ¿que te trae por aquí? ");
+        prompt("*Sigo flipando con el ave que habla....*");
+        alert("Pues " + "si sigues este camion, si sigues este camino no llegarás a ningún lado, y te morirás literalmente de hambre o algo por el estilo...");
+        alert("Le haces caso al extraño animal, y te vas regreso a tus tierras");
+        throw new Error("Has perdido, en serio que deshonra sos!");
 
     }
 
 
     function blue() {
-        alert("You start walking on the blue road");
-        alert("You spot a grocery store at the side of the road.");
-        alert("You decide to walk inside, and buy yourself some food.")
-        alert("You open the door to the store, you hear a loud bell as you opened the door.")
-        alert("You notice the cashier turning her head towards you.")
-        alert("You take a bag, and nods politely, then walks in to the store.")
-        alert("Heres a list of all the things available in the store.")
-        var inStock = ['apples', 'eggs', 'milk', 'cookies', 'cheese', 'bread', 'ham', 'carrot',
-            'broccoli', 'pizza', 'crackers', 'onions', 'bananas', 'frozen dinner', 'cereals'
+        alert("Empiezas a avanzar por el camino azul");
+        alert("Te encuentras una tienda al lado del camino.");
+        alert("Mueres de hambre así que decides entrar y comprar algo.")
+        alert("Al abrir la puerta de la tienda escuchas una campana sonar.")
+        alert("El cajero se voltea a mirarte con desgano.")
+        alert("Tomas una bolsa, pasta, y revisas que mas hay.")
+        alert("He aquí una lista de todas las cosas disponibles en la tienda.")
+        var inStock = ['Doritos', 'Lays', 'Leche', 'Oreos', 'Queso', 'Pan', 'Jamón', 'Zanahori',
+            'Taquitos al pastor', 'Quesadillas', 'Agüita de beber', 'Cebolla', 'Cambur', 'Patacones', 'Ceviche'
         ];
-        var search = prompt(inStock.join(", ") + " " + "Choose wich things you wanna buy, type 'done' when you are done." + " type one thing at the time.");
+        var search = prompt(inStock.join(", ") + " " + "Escoje que quieres comprar, escribe 'listo' cuando termines." + " escribe una cosa a la vez.");
         var inBag = [];
 
-        while (search !== "done") {
-            search = prompt(inStock + " " + "Choose wich things you wanna buy, press 'enter' when you are done." + " type one thing at the time.")
+        while (search !== "listo") {
+            search = prompt(inStock + " " + "Escoje que quieres comprar, presiona 'enter' cuando termines." + " escribe una cosa a la vez.")
             if (inStock.indexOf(search) > -1) {
                 inBag.push(search);
-                alert("You grabbed some " + search + " and put it in the bag")
+                alert("Tomaste un poco de " + search + " y lo pusiste en la bolsa")
             } else if (!search) {
                 grocery();
                 break;
             } else {
-                alert("Please choose something from the list!");
+                alert("Escoje algo de la lista bro!");
             }
 
 
