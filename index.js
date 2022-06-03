@@ -363,29 +363,29 @@ function Submit() {
     }
 
     function move() {
-        alert("You ignore walking up to the man, and you move on");
-        alert("The grass is much greener and as you walk, the flowers appear by the road");
-        alert("Suddenly as you are walking on the road, you notice a shop at the side of the road");
-        alert("You walk up to the door at the shop");
-        alert("It has a sign saying CLOSED");
-        alert("You look around, and notice that the road has ended");
-        alert("You also spot a sign hanging on a tree nearby")
-        alert("You walk up to it, and reads the text")
-        alert("its a riddle!")
-        alert("It says...")
-        var riddle = alert("*Q: Take away my first letter, and I still sound the same. Take away my last letter, I still sound the same. Even take away my letter in the middle, I will still sound the same. I am a five letter word. What am I?*")
-        var riddleArray = ["Oven", "Carrot", "Empty"];
-        var guess = prompt("Wich one of these words are the correct answer?" + riddleArray[0] + " " + riddleArray[1] + " " + riddleArray[2] + " You have 2 guesses").toLowerCase();
+        alert("Ignoras al hombre y sigues tu camino");
+        alert("La hierba es mas pastosa al avanzas, las flores alrededor mejoran el ambiente");
+        alert("Mientras caminas notas que hay una tienda al lado del camino");
+        alert("Te acercas a la puerta");
+        alert("Tiene una señal que dice CERRADO");
+        alert("Miras detenidamente y te das cuenta que el camino llega hasta allí");
+        alert("También notas un aviso colgado de un arbol cercano")
+        alert("Te acercas y lo lees")
+        alert("Es un acertijo!")
+        alert("Y dice...")
+        var riddle = alert("*Q: ¿Que moja mientras seca?*")
+        var riddleArray = ["tunica legendaria", "Tus labios bb", "Toalla"];
+        var guess = prompt("¿Cual de estas es la respuesta correcta?" + riddleArray[0] + " " + riddleArray[1] + " " + riddleArray[2] + " You have 2 guesses").toLowerCase();
 
-        if (guess === "oven") {
+        if (guess === "tunica legendaria") {
             riddleArray.shift()
-            alert("You guessed it wrong!")
-            var guessing = prompt("Last try, wich of these words are the correct answer?" + riddleArray.join(", "));
-        } else if (guess === "carrot") {
+            alert("Incorrecto!!")
+            var guessing = prompt("Último intento a ver" + riddleArray.join(", "));
+        } else if (guess === "tus labios bb") {
             delete riddleArray[1];
             alert("¡Te equivocaste!")
             var guessing2 = prompt("último intento, ¿cuál de estas palabras es la respuesta correcta?" + riddleArray.join(", "));
-        } else if (guess === "empty") {
+        } else if (guess === "toalla") {
             alert("¡Respuesta correcta, acertaste!")
             riddleCorrect();
         } else {
@@ -394,21 +394,21 @@ function Submit() {
         }
 
         if (guessing === "carrot") {
-            alert("Te equivocaste hijo mío!")
-            alert("Corres a casa como una nena.")
+            alert("¡Te equivocaste hijo mío!")
+            alert("Te vas a casa derrotado.")
             throw new Error(mensajeFinDelJuego);
         } else {
-            alert("You guessed the correct answer!")
+            alert("¡Has acertado!")
             riddleCorrect();
 
         }
 
         if (guessing2 === "oven") {
-            alert("You guessed it wrong again!")
-            alert("You run home feeling sad.")
-            throw new Error("you did not find the diamond!");
+            alert("¡Te equivocaste hijo mío!")
+            alert("te vas a casa derrotado.")
+            throw new Error(mensajeFinDelJuego);
         } else {
-            alert("You guessed the correct answer!")
+            alert("¡Felicidades, has acertado!")
             riddleCorrect();
 
         }
@@ -429,34 +429,28 @@ function Submit() {
     }
 
     function riddleCorrect() {
-        alert("You hear someone talking behind you");
-        alert(" - Good job, you solved the riddle!");
-        alert(" - Noone had solved it before");
-        alert(" - Heres a pair of keys for the bike over there");
-        alert("The man throws the keys to you, and you cath them");
-        alert(" - With the bike you can ride over the field instead of finding a road.");
-        alert("The man walks away.");
-        alert("You walk up to the bike, and puts the key in the ignition and turns the engine on.");
-        alert("You sit down on the bike.");
-        alert("And start riding onto the field");
-        alert("ITs bumpy, and you have a hard time, keeping yourself on the bike.");
-        alert("But you manage to do it");
-        alert("20 minutes later.");
-        alert("The field has ended, and you arrive at a large river, with loud streams.");
-        alert("You turn off the engine on the bike")
-        alert("You look around to find something you can use to go over the river.");
-        alert("You see a small boat at the edge of the river");
-        alert("You walk up to it, and grabs the paddles laying on the shore");
-        alert("you sit down in the boat, and adjusts the paddles");
-        alert("You starts to paddle away over to the other side of the river");
-        alert("But the stream in the river, are to strong.");
-        alert("You get carried away by them");
-        alert("You loose your paddles");
-        alert("You cant get out from the boat, because its to dangerous");
-        alert("1 hour has passed");
-        alert("You end up by the local river at hour home town");
-        alert("You look disappointed, and walks home");
-        alert("Eh, perdiste, no se como, no me preguntes...")
+        alert("Escuchas a alguien detrás de ti");
+        alert(" - Buen trabajo, has resuelto el acertijo");
+        alert(" - Nadie lo había logrado hasta ahora");
+        alert(" - Aquí tienes unas llaves para la bici de fuera");
+        alert("El hombre te las lanza");
+        alert(" - Con al bici ahora podrás moverte mas rápido y a través del campo en vez de usar caminos.");
+        alert("El fulano se va.");
+        alert("Tomas la bice y te vas.");
+        alert("Campo a través a alta velocidad, 1 hora mas tarde");
+        alert("Se acaba el campo y llega a un río");
+        alert("Te bajas de la bicicleta")
+        alert("Miras alrededor a ver si consigues algo para atravesar el río");
+        alert("Hay un pequeño bote a la orilla del río, sin dudarlo te acercas");
+        alert("te sientas en ella y ajustas los pedales");
+        alert("Pedaleas para intentar cruzar el río");
+        alert("Pero la corriente uffff es muy fuerte..");
+        alert("La corriente del río te lleva... madre mía que débil sos...");
+        alert("No puedes salir del bote ya que es muy peligroso");
+        alert("Tras un par de horas..");
+        alert("Terminas en un lugar cercano a tu casa.");
+        alert("Te decepcionaste... te vas a casa....");
+        alert("Eh, perdiste, en serio...")
         throw new Error(mensajeFinDelJuego);
 
     }
