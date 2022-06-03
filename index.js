@@ -165,49 +165,49 @@ function Submit() {
         alert("Miras a tu alrededor algo mareado aún");
         alert("Los arboles ahora son amarillos, huh?");
         alert("Te preguntas a ti mismo, ¿donde estoy?*");
-        alert("Ahead of you, you can see 2 road with different patterns");
-        alert("One of the road as purple with bricks the other one is blue dirt");
-        alert("Choose wich road you wanna take");
-        decision5 = prompt("PURPLE or BLUE").toLowerCase();
+        alert("A lo lejos, detectas 2 caminos para tomar");
+        alert("Uno de los caminos es PURPURA y el otro es AZUL");
+        alert("Alcanzas la divisoria, ¿cual camino quieres tomar?");
+        decision5 = prompt("PURPURA or AZUL").toLowerCase();
     }
 
     function cave() {
-        alert("You walk up to the cave entrance");
-        alert("You hear the sound of bats inside the cave, flying around");
-        alert("You carefully enters the cave");
-        alert("Its cold inside the cave");
-        alert("As you walk deeper inside the cave, you start to hear the sound of water flushing nearby");
-        alert("You walk around the corner");
-        alert("You end up at a big open area, with a river in the middle");
-        alert("You spot a boat at the edge of the river");
-        alert("You walk up to the boat, and as you walk up to it, you see a man walking out from the boat");
-        alert("you walk up to him");
-        alert("- Hello there! says the Man");
-        prompt(" *Speaking to the man* ");
-        alert("What brings you down here?");
-        prompt(" *speaking to the man* ");
-        alert("Oh i see, well i need to fix this boat, you wanna help?");
-        alert("Do you happen to have a hammer with you?");
+        alert("Caminas hacia la entrada de la cueva");
+        alert("Escuchas el sonido de los Zubat (en esta historia hay pokemones, problem?) alrededor");
+        alert("Con algo de temor, entrar a la cueva");
+        alert("Hace frío dentro, no tienes nada que te caliente");
+        alert("Escuchas un sonido de goteo cerca pero lo ignoras y sigues...");
+        alert("Caminas cerca de las esquinas y...");
+        alert("...terminas encontrando una especie de río dentro de la cueva misma...");
+        alert("Encuentras un bote en la orilla");
+        alert("Caminas alrededor del bote y escuchas a un viejo con barba verde, no pudo escoger otro color");
+        alert("te le acercas");
+        alert("- JO JO JO! dice el viejo");
+        prompt(" *huh* ");
+        alert("¿Que te trae por aquí chavalín?");
+        prompt(" *ehhh este bueno... solo voy de paso* le comentas... ");
+        alert("Ya veo, necesito reparar mi bot, ¿me hechas una mano? tendrás algo para cortar madera");
+        alert("¿Tendrás algo para cortar madera?? (ostias no lo se, algo como una espada? solo digo -.-!)");
 
-        if (things === "hammer") {
-            alert("you give him your hammer");
-            alert(" - Great! says the man");
-            alert(" - Now we can fix the boat!");
-            alert("The man fixes the boat with the hammer");
-            alert(" *bank* *bank* ");
-            alert(" - How can i thank you? says the man");
-            alert("WAIT! i know, the man walks back to his boat");
-            alert("He comes back with a map in his hands");
-            alert(" - Here take it! its a treasure map");
-            alert("Do you take the map? YES or NO");
-            decision6 = prompt("YES or NO").toLowerCase();
+        if (things === "espada") {
+            alert("sacas tu espada");
+            alert(" - Eh ok, una espada de madera para cortar madera, sos un capo chavalín");
+            alert(" - A ver que se puede hacer!");
+            alert("Con un extraño poder de la nada pudiste cortar la madera y reparar el bote");
+            alert(" O.o! ¿como lo hiciste??? bueno no quiero saber, replica el extraño señor ");
+            alert(" - ¿Como puedo agradecerte? dice el señor");
+            alert("ESPERA! Ya se, el señor busca algo en su camerino");
+            alert("Regresa con un extraño papel en su mapa, es un MAPA");
+            alert(" - Tómalo, es un mapa, de un tesoro que nadie ha podido encontrar");
+            alert("¿Tomas el mapa? SI o NO");
+            decision6 = prompt("SI or NO").toLowerCase();
 
         } else {
 
-            alert("You did not bring a hammer" + " you brought a " + things);
-            alert("I only got a " + things);
-            alert(" - oh well, i guess we cant get this thing up and running then");
-            alert(" - theres a exit over the bridge there! *the man points at a bridge* ");
+            alert("No tenías una espada" + " tenías un(a) " + things);
+            alert("Solo tengo un(a) " + things);
+            alert(" - Oh vaya, supongo que no podremos hacer mas...");
+            alert(" - hay una salida siguiendo ese puente de allí, señala con el dedo el señor ");
             alert("You walk over the bridge");
             alert("the bridge moves a little bit, but you manage to go over it");
             alert("You walk out from the cave, and enters the forest again");
