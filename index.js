@@ -212,7 +212,7 @@ function Submit() {
             alert("el puente se tambalea un poco pero te las arreglas para cruzar sin problemas");
             alert("Sales de la cueva para volver a encontrar en el extraño bosque");
             alert("Hay un camino, parece ser el camino principal, lo tomas sin saber donde ir");
-            throw new Error("Mueres de hambre y cansancio, que pena");
+            throw new Error(mensajeFinDelJuego);
         }
 
     }
@@ -224,7 +224,7 @@ function Submit() {
         } else if (decision2 === "cave") {
             cave();
         } else {
-            throw new Error("Mueres de hambre y cansancio, que pena");
+            throw new Error(mensajeFinDelJuego);
         }
     }
 
@@ -242,20 +242,20 @@ function Submit() {
         alert(" Miras una roca que brilla y tiene grabada una especia de enigma");
 
 
-        alert("you walk up to it");
-        alert("ITS THE DIAMOND!");
-        alert("you grab the diamond");
+        alert("Lo miras");
+        alert("Es una extraña pieza!");
+        alert("Lo tomas y bajas de la colina");
         alert("You walk down the mountain");
         alert("and you run home");
         alert("CONGRATULATIONS!!!! YOU FOUND THE DIAMOND!");
-        throw new Error("Esta historia continuará... porque no nos dió mas chance y Piero nos va a matar");
+        throw new Error(mensajeFinDelJuego);
     }
 
     function notMap() {
         alert(" - NO LO TOMES PUES!! ");
         alert(" - VETE BICHOTA! grita el hombre algo agitado");
         alert("te vas a casa llorando como nena");
-        throw new Error("Perdiste por nena");
+        throw new Error(mensajeFinDelJuego);
     }
 
     if (decision6 !== undefined) {
@@ -266,7 +266,7 @@ function Submit() {
             notMap();
 
         } else {
-            throw new Error("Moriste por nena");
+            throw new Error(mensajeFinDelJuego);
         }
     }
 
@@ -288,7 +288,7 @@ function Submit() {
         prompt("*Sigo flipando con el ave que habla....*");
         alert("Pues " + "si sigues este camion, si sigues este camino no llegarás a ningún lado, y te morirás literalmente de hambre o algo por el estilo...");
         alert("Le haces caso al extraño animal, y te vas regreso a tus tierras");
-        throw new Error("Has perdido, en serio que deshonra sos!");
+        throw new Error(mensajeFinDelJuego);
 
     }
 
@@ -324,14 +324,13 @@ function Submit() {
 
 
         function grocery() {
-            alert("You decided that its enough")
-            alert("In your bag you have " + inBag.join(", ") + ".");
-            alert("You walk up to the cashier, and put all your stuff on the desk")
-            alert("The cashier, scans every product")
-            alert("You politely pay for your product, then walks out with the stuff in the bag")
-            alert("You walk back home with the bag.")
-
-            throw new Error("you did not find the diamond!");
+            alert("Decides que es suficiente")
+            alert("Tienes en tu bolsa " + inBag.join(", ") + ".");
+            alert("Vas donde el cajero y colocas todas las cosas en la mesa")
+            alert("El cajero escanea cada producto para cobrarte")
+            alert("Pagas por todo y te vas")
+            alert("Regresas a casa con todo y te olvidas de tu deber (Piero no leas esto)")
+            throw new Error(mensajeFinDelJuego);
         }
 
 
@@ -345,7 +344,7 @@ function Submit() {
             blue();
 
         } else {
-            throw new Error("you did not find the diamond!");
+            throw new Error(mensajeFinDelJuego);
         }
     }
 
@@ -355,13 +354,12 @@ function Submit() {
 
 
     function man() {
-        alert("you walk up to the man");
-        alert("He turns around and looks at you.");
-        alert(" - GO AWAY! get out from  my property!! ");
-        alert(" - GET OOOOOOOOOOOOOOOOUT!!!!!! ");
-        alert(" you start to run back where you came from");
-
-        throw new Error("you did not find the diamond!");
+        alert("Te diriges hacia el señor");
+        alert("Te queda mirando con cara de pocos amigos.");
+        alert(" - FUERA DE MI PROPIEDAD!! ");
+        alert(" - FUERAAAAA!!!!!");
+        alert(" Huyes como alma que lleva el diablo hasta casa con mami y te olvidas de tu misi´n");
+        throw new Error(mensajeFinDelJuego);
     }
 
     function move() {
@@ -385,20 +383,20 @@ function Submit() {
             var guessing = prompt("Last try, wich of these words are the correct answer?" + riddleArray.join(", "));
         } else if (guess === "carrot") {
             delete riddleArray[1];
-            alert("You guessed it wrong!")
-            var guessing2 = prompt("last try, wich of these words are the correct answer?" + riddleArray.join(", "));
+            alert("¡Te equivocaste!")
+            var guessing2 = prompt("último intento, ¿cuál de estas palabras es la respuesta correcta?" + riddleArray.join(", "));
         } else if (guess === "empty") {
-            alert("You guessed the correct answer!")
+            alert("¡Respuesta correcta, acertaste!")
             riddleCorrect();
         } else {
-            alert("You did not guess any of these words!")
-            throw new Error("you did not find the diamond!");
+            alert("No acertaste ninguna de las palabras!")
+            throw new Error(mensajeFinDelJuego);
         }
 
         if (guessing === "carrot") {
-            alert("You guessed it wrong again!")
-            alert("You run home feeling sad.")
-            throw new Error("you did not find the diamond!");
+            alert("Te equivocaste hijo mío!")
+            alert("Corres a casa como una nena.")
+            throw new Error(mensajeFinDelJuego);
         } else {
             alert("You guessed the correct answer!")
             riddleCorrect();
@@ -426,7 +424,7 @@ function Submit() {
             move();
 
         } else {
-            throw new Error("you did not find the diamond!");
+            throw new Error(mensajeFinDelJuego);
         }
     }
 
@@ -440,17 +438,12 @@ function Submit() {
         alert("The man walks away.");
         alert("You walk up to the bike, and puts the key in the ignition and turns the engine on.");
         alert("You sit down on the bike.");
-        document.getElementById('audio3').volume = 0.1;
-        document.getElementById('audio3').play();
         alert("And start riding onto the field");
         alert("ITs bumpy, and you have a hard time, keeping yourself on the bike.");
         alert("But you manage to do it");
         alert("20 minutes later.");
         alert("The field has ended, and you arrive at a large river, with loud streams.");
-        document.getElementById('audio3').pause();
         alert("You turn off the engine on the bike")
-        document.getElementById('audio2').volume = 0.5;
-        document.getElementById('audio2').play();
         alert("You look around to find something you can use to go over the river.");
         alert("You see a small boat at the edge of the river");
         alert("You walk up to it, and grabs the paddles laying on the shore");
@@ -463,8 +456,8 @@ function Submit() {
         alert("1 hour has passed");
         alert("You end up by the local river at hour home town");
         alert("You look disappointed, and walks home");
-        document.getElementById('audio2').pause();
-        throw new Error("you did not find the diamond!");
+        alert("Eh, perdiste, no se como, no me preguntes...")
+        throw new Error(mensajeFinDelJuego);
 
     }
 
@@ -479,11 +472,12 @@ function Submit() {
     }
 
     function continues() {
-        alert("You continue to search the cabin");
-        alert("But you cant find anything");
-        alert("You take a last glance inside the cabin");
-        alert("then decides to go home, and study instead");
-        throw new Error("you did not find the diamond!");
+        alert("Sigues investigando en el refugio");
+        alert("Pero no puedes encontrar nada de nada");
+        alert("Hechas una ultima mirada nomás");
+        alert("al no encontrar nada decides regresar a casa ya que no encontraste sentido a esta aventura");
+        alert("Te felicito Jimmy Neutron, hiciste que el reino entrara en caos, PERDISTE");
+        throw new Error(mensajeFinDelJuego);
     }
 
     if (decision4 !== undefined) {
@@ -492,20 +486,20 @@ function Submit() {
         } else if (decision4 === "continue") {
             continues();
         } else {
-            throw new Error("you did not find the diamond!");
+           throw new Error(mensajeFinDelJuego);
         }
     }
 
 
-    if (things === "shovel") {
+    if (things === "escudo de goma") {
         alert("you dig out the item under the pile");
         alert("its a football");
         alert("you take it and run back home, feeling happy");
-        throw new Error("you did not find the diamond!");
+        throw new Error(mensajeFinDelJuego);
     } else {
         alert("You brough a " + things + "you cant dig it out");
-        alert("You walk home sad");
-        throw new Error("you did not find the diamond!");
+        alert("Caminas regreso a casa al no ver sentido a la aventurilla");
+        throw new Error(mensajeFinDelJuego);
     }
 
 
