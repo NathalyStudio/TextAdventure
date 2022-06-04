@@ -1,6 +1,6 @@
 function Submit() {
-    alert("La Trifuerza te ha escogido, tienes una misión y es la de rescatar a la princesa Zoe");
-    alert("En tu aventura pasarás por diversos obstáculos, ten cuidado, tus decisiones afectarán el destino de nuestro reino, pero todo sea por encontrar a la princesa.");
+    alert("El reino te ha escogido, tienes una misión, encontrar el diamante perdido de San Tzuzul");
+    alert("En tu aventura pasarás por diversos obstáculos, ten cuidado, tus decisiones afectarán el destino de nuestro reino, sino caeremos en bancarrota y los demás reinos nos invadirán.");
     alert("¡¡Bien, vamos a ello!!");
 
     var Name = prompt("Escribe tu nombre");
@@ -27,11 +27,11 @@ function Submit() {
         }
     }    
 
-    var things = prompt("Te despiertas de un sueño, te levantas de la cama y notas una luz proveniente de tu escritorio. Encuentras 3 objetos: una espada de madera (1), un escudo de goma (2) y una ocarina de juguete (3). Elige tu arma preferida de acuerdo con el número de la misma.");
+    var things = prompt("Te despiertas de un sueño, te levantas de la cama y notas una luz proveniente de tu escritorio. Encuentras 3 objetos: una espada de madera (1), un escudo de goma (2) y una ocarina de juguete (3). Elige tu arma preferida de acuerdo con el número de la misma.");*/
   /*   while (things === "") {
         alert("Debes elegir para continuar con tu aventura.")
         alert("No cumpliste con tu misión y el reino entró en caos con el país vecino!");
-    } */
+    } 
     ValidateWeapon();
 
 
@@ -443,6 +443,7 @@ function Submit() {
             move();
 
         } else {
+        	alert("Penko te equivocaste, has perdido 😂!")
             throw new Error(mensajeFinDelJuego);
         }
     }
@@ -453,7 +454,7 @@ function Submit() {
         alert(" - Nadie lo había logrado hasta ahora");
         alert(" - Aquí tienes unas llaves para la bici de fuera");
         alert("El hombre te las lanza");
-        alert(" - Con al bici ahora podrás moverte mas rápido y a través del campo en vez de usar caminos.");
+        alert(" - Con la bici ahora podrás moverte mas rápido y a través del campo en vez de usar caminos.");
         alert("El fulano se va.");
         alert("Tomas la bice y te vas.");
         alert("Campo a través a alta velocidad, 1 hora mas tarde");
