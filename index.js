@@ -36,10 +36,10 @@ function Submit() {
 
 
    function ValidateWeapon(){
-       let validateOption = prompt("Elige entre una espada plástica (1), un escudo de goma (2) y una ocarina de juguete (3). Elige tu arma preferida.");
+       let validateOption = prompt("Elige entre una espada de madera (1), un escudo de goma (2) y una ocarina de juguete (3). Elige tu arma preferida.");
   switch(validateOption){
       case "espada":
-          alert("Haz escogido la espada plástica. Tendrás mejor oportunidad en combates, pero tu defensa será regular.");
+          alert("Haz escogido la espada de madera. Tendrás mejor oportunidad en combates, pero tu defensa será regular.");
           break;
         case "escudo": 
         alert("Haz escogido un escudo de goma. Tendrás una defensa excelente, pero te costara defenderte de tus enemigos.")
@@ -436,10 +436,10 @@ function Submit() {
 
 
     if (decision3 !== undefined) {
-        if (decision3 === "hombre") {
+        if (decision3 === "señor") {
             man();
 
-        } else if (decision3 === "move") {
+        } else if (decision3 === "caminar") {
             move();
 
         } else {
@@ -474,16 +474,16 @@ function Submit() {
 
     }
 
-/* 
+
     function basement() {
-        alert("You walk down the basement, as you walk down you hear the wooden steps squeeking");
-        alert("You can hear rats, on the floor running.");
-        alert("You look around in the basement");
-        alert("And you spot a pile of dirt");
-        alert("and something sticks out under it");
-        alert("If you have a shovel you can dig it out");
+        alert("Bajas hacia el sótano y logras escuchar el sonido chirriante de la madera al crujir");
+        alert("Las ratas deambulan frente a tu cara sin pudor alguno...");
+        alert("Miras a tu alrededor y encuentras una montaña de cosas sucias");
+        alert("Remueves todoc con mucho cuidado");
+        alert("Notas algo en lo profundo de ese desastre");
+        alert("Necesita algo como un... escudo....");
     }
- */
+ 
     function continues() {
         alert("Sigues investigando en el refugio");
         alert("Pero no puedes encontrar nada de nada");
@@ -507,7 +507,7 @@ function Submit() {
 
     if (things === "escudo") {
         alert("Escabas sobre una pila de cosas y ropa sucia, porque las ganas por encontrar el diamante y hacerte rico pueden mas");
-        alert("Pero encuentras la caja de pandora");
+        alert("Pero encuentras la caja de pandora y ni siquiera tu escudo sirve para evitar tu curiosidad");
         alert("La abres: ves tus peores miedos y decides quedarte callado, volver a casa y mas nunca hablar de este juego.");
         throw new Error(mensajeFinDelJuego);
     } else {
