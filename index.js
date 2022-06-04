@@ -27,7 +27,7 @@ function Submit() {
         }
     }    
 
-    var things = prompt("Te despiertas de un sueño, te levantas de la cama y notas una luz proveniente de tu escritorio. Encuentras 3 objetos: una espada de madera (1), un escudo de goma (2) y una ocarina de juguete (3). Elige tu arma preferida de acuerdo con el número de la misma.");*/
+    var things = prompt("Te despiertas de un sueño, te levantas de la cama y notas una luz proveniente de tu escritorio. Encuentras 3 objetos: una espada de madera (1), un escudo de goma (2) y una ocarina de juguete (3). Elige tu arma preferida de acuerdo con el número de la misma.");
   /*   while (things === "") {
         alert("Debes elegir para continuar con tu aventura.")
         alert("No cumpliste con tu misión y el reino entró en caos con el país vecino!");
