@@ -1,4 +1,4 @@
-function Submit() {
+bfunction Submit() {
     alert("El reino te ha escogido, tienes una misión, encontrar el diamante perdido de San Tzuzul");
     alert("En tu aventura pasarás por diversos obstáculos, ten cuidado, tus decisiones afectarán el destino de nuestro reino, sino caeremos en bancarrota y los demás reinos nos invadirán.");
     alert("¡¡Bien, vamos a ello!!");
@@ -126,8 +126,7 @@ function Submit() {
     function cabin() {
         alert("Decides entrar al refugio");
         alert("Abres la puerta con la mano izquierda");
-        alert("As you open the old door, its starts screaking *screak* *screak*");
-        alert("Yo");
+        alert("Mientras abres la puerta el sonido de la puerta colabora a que temas y seas mas cauteloso");
         alert("Caminas lentamente dentro del refugio, el piso se quiebra y caes a lo boludo");
         alert("Encuentras unas escaleras que van hacia una especie de sótano");
         alert("Quieres ir al SOTANO o seguir tu CAMINO");
