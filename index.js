@@ -322,7 +322,7 @@ function Submit() {
         var inStock = ['Doritos', 'Lays', 'Leche', 'Oreos', 'Queso', 'Pan', 'Jamón', 'Zanahoria',
             'Taquitos', 'Quesadillas', 'Aguita de beber', 'Cebolla', 'Cambur', 'Patacones', 'Ceviche'
         ];
-        var search = prompt(inStock.join(", ") + " " + "Escoje que quieres comprar, escribe 'listo' cuando termines." + " escribe una cosa a la vez.");
+        var search = prompt(inStock.join(", ") + " " + "Escoje que quieres comprar, escribe 'listo' cuando termines." + " Escribe una cosa a la vez.");
         var inBag = [];
 
         while (search !== "listo") {
@@ -356,12 +356,13 @@ function Submit() {
     }
 
     if (decision5 !== undefined) {
-        if (decision5 === "purple") {
+        if (decision5 === "purpura") {
             purple();
-        } else if (decision5 === "blue") {
+        } else if (decision5 === "azul") {
             blue();
 
         } else {
+            alert("Wey, te equivocaste, los otros caminos llevan a la muerte segura, asi que por tu bien, el juego termina aqui.")
             throw new Error(mensajeFinDelJuego);
         }
     }
@@ -376,7 +377,7 @@ function Submit() {
         alert("Te queda mirando con cara de pocos amigos.");
         alert(" - FUERA DE MI PROPIEDAD!! ");
         alert(" - FUERAAAAA!!!!!");
-        alert(" Huyes como alma que lleva el diablo hasta casa con mami y te olvidas de tu misi´n");
+        alert(" Huyes como alma que lleva el diablo hasta casa con mami y te olvidas de tu misión");
         throw new Error(mensajeFinDelJuego);
     }
 
@@ -407,11 +408,11 @@ function Submit() {
             alert("¡Respuesta correcta, acertaste!")
             riddleCorrect();
         } else {
-            alert("No acertaste ninguna de las palabras!")
+            alert("No acertaste ninguna de las palabras! Hasta aqui llego tu cruzada")
             throw new Error(mensajeFinDelJuego);
         }
 
-        if (guessing === "carrot") {
+        if (guessing === "zanahoria") {
             alert("¡Te equivocaste hijo mío!")
             alert("Te vas a casa derrotado.")
             throw new Error(mensajeFinDelJuego);
@@ -435,7 +436,7 @@ function Submit() {
 
 
     if (decision3 !== undefined) {
-        if (decision3 === "man") {
+        if (decision3 === "hombre") {
             man();
 
         } else if (decision3 === "move") {
@@ -473,7 +474,7 @@ function Submit() {
 
     }
 
-
+/* 
     function basement() {
         alert("You walk down the basement, as you walk down you hear the wooden steps squeeking");
         alert("You can hear rats, on the floor running.");
@@ -482,7 +483,7 @@ function Submit() {
         alert("and something sticks out under it");
         alert("If you have a shovel you can dig it out");
     }
-
+ */
     function continues() {
         alert("Sigues investigando en el refugio");
         alert("Pero no puedes encontrar nada de nada");
@@ -493,23 +494,24 @@ function Submit() {
     }
 
     if (decision4 !== undefined) {
-        if (decision4 === "basement") {
+        if (decision4 === "sotano") {
             basement();
-        } else if (decision4 === "continue") {
+        } else if (decision4 === "continuar") {
             continues();
         } else {
+            alert("No hay que tener dos dedos de frente para no equivocarse. Has perdido por brutoo!")
            throw new Error(mensajeFinDelJuego);
         }
     }
 
 
-    if (things === "escudo de goma") {
-        alert("you dig out the item under the pile");
-        alert("its a football");
-        alert("you take it and run back home, feeling happy");
+    if (things === "escudo") {
+        alert("Escabas sobre una pila de cosas y ropa sucia, porque las ganas por encontrar el diamante y hacerte rico pueden mas");
+        alert("Pero encuentras la caja de pandora");
+        alert("La abres: ves tus peores miedos y decides quedarte callado, volver a casa y mas nunca hablar de este juego.");
         throw new Error(mensajeFinDelJuego);
     } else {
-        alert("You brough a " + things + "you cant dig it out");
+        alert("Escogiste un " + things + "No puedes continuar.");
         alert("Caminas regreso a casa al no ver sentido a la aventurilla");
         throw new Error(mensajeFinDelJuego);
     }
